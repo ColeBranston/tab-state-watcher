@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Tab State Watcher",
+  "version": "1.0.0",
+  "description": "Get notified when any of your open tabs changes state: finishes loading, changes title or URL, starts playing sound, and more.",
+  "permissions": ["tabs", "notifications", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Tab State Watcher",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

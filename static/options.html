@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tab State Watcher – Settings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="options">
+    <main>
+      <h1>Tab State Watcher</h1>
+
+      <section>
+        <h2>Notify me when a tab…</h2>
+        <div id="kinds" class="kinds"></div>
+      </section>
+
+      <section>
+        <h2>Behavior</h2>
+        <label>
+          <input id="backgroundOnly" type="checkbox" />
+          Ignore the tab I'm currently looking at
+        </label>
+        <label>
+          Wait at least
+          <input id="cooldown" type="number" min="0" max="3600" step="1" />
+          seconds between notifications for the same tab
+        </label>
+        <label>
+          <input id="sticky" type="checkbox" />
+          Keep notifications on screen until I dismiss them
+        </label>
+      </section>
+
+      <footer>
+        <button id="test" type="button">Send test notification</button>
+        <button id="reset" type="button">Reset to defaults</button>
+        <span id="status" class="status" role="status"></span>
+      </footer>
+    </main>
+    <script type="module" src="options.js"></script>
+  </body>
+</html>

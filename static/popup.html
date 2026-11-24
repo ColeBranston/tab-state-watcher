@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tab State Watcher</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="popup">
+    <header>
+      <h1>Recent tab changes</h1>
+      <div class="actions">
+        <button id="clear" type="button">Clear</button>
+        <button id="options" type="button">Settings</button>
+      </div>
+    </header>
+    <p id="empty" class="empty">No changes yet. Changes in your other tabs will show up here.</p>
+    <ul id="log"></ul>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
